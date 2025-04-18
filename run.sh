@@ -11,7 +11,7 @@ mqtt_user=$(bashio::config 'mqtt_user')
 mqtt_password=$(bashio::config 'mqtt_password')
 
 CONFIG_DIR="/data/addon_configs/ora2mqtt"
-CONFIG_PATH="/data/addon_configs/ora2mqtt/config.yaml"
+CONFIG_PATH="$CONFIG_DIR/config.yaml"
 
 mkdir -p "$CONFIG_DIR"
 
