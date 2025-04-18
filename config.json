@@ -1,0 +1,15 @@
+{
+  "name": "ora2mqtt",
+  "version": "0.0.6",
+  "slug": "ora2mqtt",
+  "description": "Oracle to MQTT bridge",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["amd64"],
+  "map": ["config:rw"],
+  "options": {},
+  "schema": {},
+  "ports": {
+    "1883/tcp": 1883
+  }
+}
