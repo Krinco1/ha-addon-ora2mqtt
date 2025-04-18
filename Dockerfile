@@ -1,9 +1,10 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 
 WORKDIR /app
-COPY run.sh /app/run.sh
-COPY bin/Release/net6.0/publish/ /app/
 
-RUN chmod +x /app/run.sh
+COPY run.sh ./run.sh
+COPY bin/Release/net6.0/publish/ ./
 
-CMD [ "/app/run.sh" ]
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
