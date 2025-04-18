@@ -2,14 +2,28 @@
   "name": "ora2mqtt",
   "version": "0.0.6",
   "slug": "ora2mqtt",
-  "description": "Oracle to MQTT bridge",
+  "description": "Integration von ORA-Fahrzeugen in Home Assistant via MQTT",
   "startup": "application",
   "boot": "auto",
-  "arch": ["amd64"],
-  "map": ["config:rw"],
-  "options": {},
-  "schema": {},
-  "ports": {
-    "1883/tcp": 1883
+  "arch": [
+    "amd64"
+  ],
+  "options": {
+    "username": "",
+    "password": "",
+    "country": "DE",
+    "mqtt_server": "mqtt://localhost",
+    "mqtt_topic_prefix": "ora",
+    "mqtt_user": "",
+    "mqtt_password": ""
+  },
+  "schema": {
+    "username": "str",
+    "password": "str",
+    "country": "str",
+    "mqtt_server": "str",
+    "mqtt_topic_prefix": "str",
+    "mqtt_user": "str",
+    "mqtt_password": "str"
   }
 }
